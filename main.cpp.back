@@ -1,0 +1,33 @@
+#include "head.h"
+#include "msort.cpp"
+void init(node& x,const char& c,const u& va);
+
+int main()
+{
+	nodep arr = new node[10];
+	for(u i = 0;i<10;i++)
+	{
+		init(arr[i],'j'-i,i+1);
+	}
+
+	for(u i=0;i<10;i++)
+	{
+		cout<<(arr[i].ch)<<' '<<(arr[i].data)<<'\t';
+	}
+	cout<<endl;
+
+	msort(arr,0,9);
+
+	for(u i=0;i<10;i++)
+	{
+		cout<<(arr[i].ch)<<' '<<(arr[i].data)<<'\t';
+	}
+	cout<<endl;
+	return 0;
+}
+void init(node& a,const char & c,const u& va)
+{
+	a.ch = c;
+	a.data = va;
+	a.b = a.d = NULL;
+}
