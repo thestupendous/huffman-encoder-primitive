@@ -1,5 +1,3 @@
-//this function sorts in decreasing order, for the huffman's encoder program.
-//this is a generic merge sort algorithm, i.e. it can work on an aray of any type.
 //x is pointer to the data structure of the array
 //u is the integer substitution
 #define x nodep

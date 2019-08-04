@@ -7,15 +7,15 @@ void init(nodep x,const char& c,const u& va);
 kya
 {
 
-
-	string text,line;
+	string text,line;/*
 	while(getline(cin,line))
 	{
 		if(line == "^D")
 			break;
 		line += "\n";
 		text += line;
-	}
+	}*/
+	cin>>text;
 
 	nodep arr[255] = {0};
 	for(u i=0;i<255;i++) { arr[i] = new node; }

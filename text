@@ -1,8 +1,0 @@
-The decoding process needs a convenient representation for the prefix code so
-that we can easily pick off the initial codeword. A binary tree whose leaves are
-the given characters provides one such representation. We interpret the binary
-codeword for a character as the simple path from the root to that character, where 0
-means “go to the left child” and 1 means “go to the right child.” Figure 16.4 shows
-the trees for the two codes of our example. Note that these are not binary search
-trees, since the leaves need not appear in sorted order and internal nodes do not
-contain character keys.

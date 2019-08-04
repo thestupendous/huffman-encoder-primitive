@@ -2,6 +2,7 @@
 #include<iostream>
 using namespace std;
 
+
 typedef struct node
 {
 	char ch;
@@ -13,3 +14,4 @@ bool operator>=(node a,node b)
 {
 	return ( a.data >= b.data );
 }
+
